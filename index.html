@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tomates anciennes – Hanspaulka</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
@@ -13,17 +14,14 @@
 <div class="overlay"></div>
 
 <div class="lang-switch">
-  <button onclick="setLang('fr')"><img src="images/flags/fr.png"></button>
-  <button onclick="setLang('en')"><img src="images/flags/en.png"></button>
-  <button onclick="setLang('cz')"><img src="images/flags/cz.png"></button>
+  <button id="btn-fr" onclick="setLang('fr')"><img src="images/flags/fr.png"></button>
+  <button id="btn-en" onclick="setLang('en')"><img src="images/flags/en.png"></button>
+  <button id="btn-cz" onclick="setLang('cz')"><img src="images/flags/cz.png"></button>
 </div>
 
 <div class="hero-content">
 
-<h1 
-data-fr="Tomates anciennes" 
-data-en="Heirloom Tomatoes" 
-data-cz="Staré odrůdy rajčat">
+<h1 data-fr="Tomates anciennes" data-en="Heirloom Tomatoes" data-cz="Staré odrůdy rajčat">
 Tomates anciennes
 </h1>
 
@@ -34,189 +32,139 @@ data-cz="Pěstováno rodinou • Bez pesticidů a chemických hnojiv">
 Cultivé en famille • Sans pesticides ni engrais chimiques
 </p>
 
+<p class="story"
+data-fr="Cultivé avec nos enfants dans notre jardin à Hanspaulka ❤️"
+data-en="Grown with our kids in our garden ❤️"
+data-cz="Pěstováno s našimi dětmi na naší zahradě ❤️">
+Cultivé avec nos enfants ❤️
+</p>
+
 <div class="badges">
-
-<span
-data-fr="🌱 Plants robustes"
-data-en="🌱 Strong seedlings"
-data-cz="🌱 Silné sazenice">
-🌱 Plants robustes
-</span>
-
-<span
-data-fr="🍅 Goût exceptionnel"
-data-en="🍅 Exceptional taste"
-data-cz="🍅 Výjimečná chuť">
-🍅 Goût exceptionnel
-</span>
-
-<span
-data-fr="🔥 Quantités limitées"
-data-en="🔥 Limited quantities"
-data-cz="🔥 Omezené množství">
-🔥 Quantités limitées
-</span>
-
+<span data-fr="🌱 Plants robustes" data-en="🌱 Strong seedlings" data-cz="🌱 Silné sazenice">🌱 Plants robustes</span>
+<span data-fr="🍅 Goût exceptionnel" data-en="🍅 Exceptional taste" data-cz="🍅 Výjimečná chuť">🍅 Goût exceptionnel</span>
+<span data-fr="🔥 Quantités limitées" data-en="🔥 Limited quantities" data-cz="🔥 Omezené množství">🔥 Quantités limitées</span>
 </div>
 
 </div>
 </header>
 
 <section class="products">
-<h2 
-data-fr="Variétés" 
-data-en="Varieties" 
-data-cz="Odrůdy">
-Variétés
-</h2>
+<h2 data-fr="Variétés" data-en="Varieties" data-cz="Odrůdy">Variétés</h2>
 
 <div class="grid">
 
-<!-- WOW -->
+<!-- URGENCE -->
 <div class="card premium">
 <img src="images/tomatoes/pink-berkeley.jpg">
 <h3>Pink Berkeley Tie Dye</h3>
-<p class="stock highlight"
-data-fr="⚠️ Plus que 7 disponibles"
-data-en="⚠️ Only 7 left"
-data-cz="⚠️ Posledních 7 kusů">
-⚠️ Plus que 7 disponibles
-</p>
+<p class="stock highlight urgent">🔥 Presque épuisé – plus que 6</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/green-zebra.jpg">
 <h3>Green Zebra</h3>
-<p class="stock"
-data-fr="Stock : 15"
-data-en="Stock: 15"
-data-cz="Skladem: 15">
-Stock : 15
-</p>
+<p class="stock">Stock : 15</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/green-copia.jpg">
 <h3>Green Copia</h3>
-<p class="stock"
-data-fr="Stock : 12"
-data-en="Stock: 12"
-data-cz="Skladem: 12">
-Stock : 12
-</p>
+<p class="stock">Stock : 12</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/prune-noire.jpg">
 <h3>Prune Noire</h3>
-<p class="stock"
-data-fr="Stock : 15"
-data-en="Stock: 15"
-data-cz="Skladem: 15">
-Stock : 15
-</p>
+<p class="stock">Stock : 14</p>
+<p class="price">100 CZK</p>
 </div>
 
-<!-- CONFIANCE -->
 <div class="card">
 <img src="images/tomatoes/marzano.jpg">
 <h3>San Marzano</h3>
-<p class="stock"
-data-fr="Stock : 20"
-data-en="Stock: 20"
-data-cz="Skladem: 20">
-Stock : 20
-</p>
+<p class="stock">Stock : 20</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/belle-dordogne.jpg">
 <h3>Belle de Dordogne</h3>
-<p class="stock"
-data-fr="Stock : 11"
-data-en="Stock: 11"
-data-cz="Skladem: 11">
-Stock : 11
-</p>
+<p class="stock">Stock : 10</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/oxheart.jpg">
 <h3>Boeuf Oxheart</h3>
-<p class="stock"
-data-fr="Stock : 29"
-data-en="Stock: 29"
-data-cz="Skladem: 29">
-Stock : 29
-</p>
+<p class="stock">Stock : 29</p>
+<p class="price">100 CZK</p>
 </div>
 
-<!-- VOLUME -->
 <div class="card">
 <img src="images/tomatoes/delice-or.jpg">
 <h3>Délice d’Or</h3>
-<p class="stock"
-data-fr="Stock : 30"
-data-en="Stock: 30"
-data-cz="Skladem: 30">
-Stock : 30
-</p>
+<p class="stock">Stock : 30</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/zuckertraube.jpg">
 <h3>Zuckertraube</h3>
-<p class="stock"
-data-fr="Stock : 14"
-data-en="Stock: 14"
-data-cz="Skladem: 14">
-Stock : 14
-</p>
+<p class="stock">Stock : 13</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/bloody-butcher.jpg">
 <h3>Bloody Butcher</h3>
-<p class="stock"
-data-fr="Stock : 10"
-data-en="Stock: 10"
-data-cz="Skladem: 10">
-Stock : 10
-</p>
+<p class="stock">Stock : 9</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/lithium-sunset.jpg">
 <h3>Lithium Sunset</h3>
-<p class="stock"
-data-fr="Stock : 9"
-data-en="Stock: 9"
-data-cz="Skladem: 9">
-Stock : 9
-</p>
+<p class="stock highlight urgent">🔥 Presque épuisé – plus que 8</p>
+<p class="price">100 CZK</p>
 </div>
 
-<!-- URGENCE -->
 <div class="card">
 <img src="images/tomatoes/black-cherry.jpg">
 <h3>Black Cherry</h3>
-<p class="stock highlight"
-data-fr="⚠️ Plus que 7 disponibles"
-data-en="⚠️ Only 7 left"
-data-cz="⚠️ Posledních 7 kusů">
-⚠️ Plus que 7 disponibles
-</p>
+<p class="stock highlight urgent">🔥 Presque épuisé – plus que 7</p>
+<p class="price">100 CZK</p>
 </div>
 
 <div class="card">
 <img src="images/tomatoes/yellow-belgium.jpg">
 <h3>Yellow Belgium</h3>
-<p class="stock highlight"
-data-fr="⚠️ Plus que 7 disponibles"
-data-en="⚠️ Only 7 left"
-data-cz="⚠️ Posledních 7 kusů">
-⚠️ Plus que 7 disponibles
-</p>
+<p class="stock highlight urgent">🔥 Presque épuisé – plus que 7</p>
+<p class="price">100 CZK</p>
+</div>
+
+<!-- NOUVEAUTÉS -->
+<div class="card">
+<img src="images/placeholder.jpg">
+<h3>Poire jaune</h3>
+<p class="stock">Stock : 25</p>
+<p class="price">100 CZK</p>
+</div>
+
+<div class="card">
+<img src="images/placeholder.jpg">
+<h3>Grosse des marais</h3>
+<p class="stock">Stock : 10</p>
+<p class="price">100 CZK</p>
+</div>
+
+<div class="card">
+<img src="images/placeholder.jpg">
+<h3>Dark Galaxy</h3>
+<p class="stock">Stock : 10</p>
+<p class="price">100 CZK</p>
 </div>
 
 </div>
@@ -224,25 +172,15 @@ data-cz="⚠️ Posledních 7 kusů">
 <p class="bundle">1 plant = 100 CZK <br>🔥 3 plants = 250 CZK</p>
 
 <div class="cta-section">
-<a href="https://wa.me/420773140137" class="cta-btn"
-data-fr="Contactez-nous"
-data-en="Contact us"
-data-cz="Kontaktujte nás">
-Contactez-nous
+<a href="https://wa.me/420773140137" class="cta-btn">
+Réserver maintenant
 </a>
 </div>
 
 </section>
 
 <section class="production">
-
-<h2 
-data-fr="Notre production" 
-data-en="Our production" 
-data-cz="Naše produkce">
-Notre production
-</h2>
-
+<h2>Notre production</h2>
 <div class="production-grid">
 <img src="images/enfants1.jpg">
 <img src="images/enfants2.jpg">
@@ -250,7 +188,6 @@ Notre production
 <img src="images/plants2.jpg">
 <img src="images/plants3.jpg">
 </div>
-
 </section>
 
 <footer>
